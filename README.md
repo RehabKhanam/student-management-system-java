@@ -1,15 +1,27 @@
-# Student Management System
+import java.util.Scanner;
 
-## Description
-This is my first Java project uploaded on GitHub.
+public class StudentManagementSystem {
 
-## Features
-- Java Program
-- Beginner Friendly
-- Learning GitHub
+    public static void main(String[] args) {
 
-## Technologies Used
-- Java
+        Scanner sc = new Scanner(System.in);
 
-## Author
-Makandar Rehab Khanam
+        System.out.print("Enter Student Name: ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter Student Marks: ");
+        int marks = sc.nextInt();
+
+        System.out.println("\nStudent Details");
+        System.out.println("Name: " + name);
+        System.out.println("Marks: " + marks);
+
+        if(marks >= 35){
+            System.out.println("Result: Pass");
+        } else {
+            System.out.println("Result: Fail");
+        }
+
+        sc.close();
+    }
+}
