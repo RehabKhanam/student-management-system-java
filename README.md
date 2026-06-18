@@ -1,27 +1,17 @@
-import java.util.Scanner;
+# Student Management System
 
-public class StudentManagementSystem {
+## Description
+A simple Java application to store and display student details.
 
-    public static void main(String[] args) {
+## Features
+- Accept Student Name
+- Accept Student Marks
+- Display Student Details
+- Check Pass/Fail Status
 
-        Scanner sc = new Scanner(System.in);
+## Technologies Used
+- Java
+- Scanner Class
 
-        System.out.print("Enter Student Name: ");
-        String name = sc.nextLine();
-
-        System.out.print("Enter Student Marks: ");
-        int marks = sc.nextInt();
-
-        System.out.println("\nStudent Details");
-        System.out.println("Name: " + name);
-        System.out.println("Marks: " + marks);
-
-        if(marks >= 35){
-            System.out.println("Result: Pass");
-        } else {
-            System.out.println("Result: Fail");
-        }
-
-        sc.close();
-    }
-}
+## Author
+Makandar Rehab Khanam
